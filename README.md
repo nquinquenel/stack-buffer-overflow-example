@@ -8,7 +8,7 @@ gcc -o stack stack.c -m32 -fno-stack-protector
 
 ## Goal
 
-Using the file **stack**, you need to get through the condition **exploit == 0x9876** and get the message **It worked!** printed. No file modification is allowed.
+Using the file **stack**, you need to get through the condition **exploit == 0x9876** and have the message **It worked!** printed. No file modification is allowed.
 
 ## Solution
 
