@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-answer() {
+void answer() {
 	printf("It worked!\n");
 }
 
-useless() {
+void useless() {
 	printf("It failed.\n");
 }
 
 int main() {
-	void (*func)() = useless();
+	void (*func)() = useless;
 	char arr[10];
 	fgets(arr, 15, stdin);
-	useless();
+	func();
 	return 0;
 }
