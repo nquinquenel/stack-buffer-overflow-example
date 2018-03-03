@@ -21,10 +21,12 @@ gdb -q ./stack
 disas answer
 ```
 
-Here you can find the memory address <X> for the function answer
+Once you have the memory address for the function answer, you can start to overflow the buffer
 
 Using python :
 
 ```
-python -c "print 'A'*10+'<X>'" | ./stack
+python -c "print 'A'*10+'<TheMemoryAddress>'" | ./stack
 ```
+
+Check example1 for more information about how to write the python command.
